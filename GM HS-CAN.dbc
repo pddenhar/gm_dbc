@@ -1,0 +1,231 @@
+VERSION ""
+
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_: 
+BU_: ECM GW BCM TCM 
+BO_ 2147484881 Engine_General_Status_5: 8 ECM
+   SG_ Oil_Pressure : 23|8@0+ (4,0) [0|1] "kPa" ECM
+   SG_ Oil_Temp_Valid : 7|1@0+ (1,0) [0|1] "" ECM
+   SG_ Oil_Pressure_Valid : 6|1@0+ (1,0) [0|1] "" ECM
+   SG_ Oil_Pressure_Low : 5|1@0+ (1,0) [0|1] "" ECM
+   SG_ Oil_Change_Indication : 4|1@0+ (1,0) [0|1] "" ECM
+   SG_ Oil_Temperature : 15|8@0+ (1,-40) [0|1] "C" ECM
+   SG_ Fuel_Level : 47|8@0+ (0.3921,0) [0|1] "Percent" ECM
+   SG_ Fuel_Capacity : 27|12@0+ (0.125,0) [0|1] "Liters" ECM
+
+BO_ 2147484873 Transmission_General_Status_3: 4 ECM
+   SG_ Transmission_Oil_Temp_Valid : 7|1@0+ (1,0) [0|1] "" ECM
+   SG_ Transmission_Oil_Temp_Present : 6|1@0+ (1,0) [0|1] "" ECM
+   SG_ Transmission_Oil_Temp : 15|8@0+ (1,-40) [0|1] "C" ECM
+   SG_ Transmission_Oil_Thermal_Mgmt : 1|2@0+ (1,0) [0|1] "" ECM
+
+BO_ 2147484865 Engine_General_Status_4: 8 ECM
+   SG_ Baro_Pressure_Valid : 7|1@0+ (1,0) [0|1] "" ECM
+   SG_ Coolant_Temp_Valid : 6|1@0+ (1,0) [0|1] "" ECM
+   SG_ IAT_Valid : 5|1@0+ (1,0) [0|1] "" ECM
+   SG_ Barometric_Pressure_Absolute : 15|8@0+ (0.5,0) [0|127.5] "kPa" ECM
+   SG_ Engine_Coolant_Temperature : 23|8@0+ (1,-40) [-40|215] "C" ECM
+   SG_ IAT : 31|8@0+ (1,-40) [-40|215] "C" ECM
+
+BO_ 2147484897 Vehicle_VIN_10-17: 8 BCM
+   SG_ Vehicle_VIN_10-17 : 7|64@4- (1,0) [0|1] "" ECM
+
+BO_ 2147484665 Engine_General_Status_3: 8 ECM
+   SG_ Fuel_Injected_Rolling_Count_Reset : 7|1@0+ (1,0) [0|1] "" ECM
+   SG_ Generator_Field_Duty_Cycle_Valid : 6|1@0+ (1,0) [0|1] "" ECM
+   SG_ Generator_Failed : 5|1@0+ (1,0) [0|1] "" ECM
+   SG_ Engine_Speed_Limitation : 4|1@0+ (1,0) [0|1] "" ECM
+   SG_ Vehicle_Speed_Limitation : 2|1@0+ (1,0) [0|1] "" ECM
+   SG_ Powertrain_Top_Speed_Limit_Reduced : 3|1@0+ (1,0) [0|1] "" ECM
+   SG_ AC_High_Side_Pressure_Valid : 1|1@0+ (1,0) [0|1] "" ECM
+   SG_ Generator_Duty_Cycle_Powertrain_Override_Active : 0|1@0+ (1,0) [0|1] "" ECM
+   SG_ Fuel_Injected_Rolling_Count : 15|16@0+ (3.05176e-05,0) [0|1.99997] "L" ECM
+   SG_ Generator_Field_Duty_Cycle : 31|8@0+ (0.392157,0) [0|100] "%" ECM
+   SG_ Engine_Cooling_Fan_Speed : 47|8@0+ (0.392157,0) [0|100] "%" ECM
+   SG_ Engine_Oil_Life_Remaining : 55|8@0+ (0.392157,0) [0|100] "%" ECM
+   SG_ AC_High_Side_Pressure : 63|8@0+ (14,0) [0|3570] "kPa" ECM
+   SG_ Vehicle_Top_Speed_Limit : 39|8@0+ (2,0) [0|510] "km/h" ECM
+
+BO_ 2147484625 Engine_General_Status_2: 8 ECM
+   SG_ Throttle_Position_Valid : 7|1@0+ (1,0) [0|1] "" ECM
+   SG_ Throttle_Progression_Status : 6|2@0+ (1,0) [0|1] "" ECM
+   SG_ Engine_Emissions_Malfunction : 4|1@0+ (1,0) [0|1] "" ECM
+   SG_ Engine_Non_Emissions_Malfunction : 3|1@0+ (1,0) [0|1] "" ECM
+   SG_ Throttle_Position : 15|8@0+ (0.392157,0) [0|100] "%" ECM
+   SG_ Engine_Boost_Pressure_Indication_Valid : 23|1@0+ (1,0) [0|1] "" ECM
+   SG_ Engine_Coast_Fuel_Cut_Off : 22|1@0+ (1,0) [0|1] "" ECM
+   SG_ Engine_Oil_Starvation : 21|1@0+ (1,0) [0|1] "" ECM
+   SG_ Cruise_Control_Driver_Selected_Speed : 19|12@0+ (0.0625,0) [0|255] "km/h" ECM
+   SG_ Cruise_Control_Active : 39|1@0+ (1,0) [0|1] "" ECM
+   SG_ AC_Compressor_Command : 37|1@0+ (1,0) [0|1] "" ECM
+   SG_ Instant_Fuel_Consumption_Rate : 35|12@0+ (0.025,0) [0|102.375] "L/hr" ECM
+   SG_ Engine_Boost_Pressure_Indication : 55|8@0+ (0.392157,0) [0|100] "%" ECM
+
+BO_ 2147484149 Transmission_General_Status_2: 8 ECM
+   SG_ TCC_Cmd_Mode : 7|3@0+ (1,0) [0|1] "" ECM
+   SG_ Trans_Est_Gear : 3|4@0+ (1,0) [0|1] "" ECM
+   SG_ Trans_Est_Gear_Valid : 4|1@0+ (1,0) [0|1] "" ECM
+   SG_ Auto_Trans_Shift_Status : 13|2@0+ (1,0) [0|1] "" ECM
+   SG_ Trans_Commanded_Gear : 11|4@0+ (1,0) [0|1] "" ECM
+   SG_ Trans_Shift_Level_Pos : 27|4@0+ (1,0) [0|1] "" ECM
+
+BO_ 2147484129 Cruise_Control_Switch_Status: 8 GW
+   SG_ Cancel_Switch_Active : 7|1@0+ (1,0) [0|1] "" ECM
+   SG_ On_Switch_Active : 6|1@0+ (1,0) [0|1] "" ECM
+   SG_ Resume_Switch_Active : 5|1@0+ (1,0) [0|1] "" ECM
+   SG_ Set_Switch_Active : 4|1@0+ (1,0) [0|1] "" ECM
+   SG_ Speed_Increase_Switch_Active : 3|1@0+ (1,0) [0|1] "" ECM
+   SG_ Speed_Decrease_Switch_Active : 2|1@0+ (1,0) [0|1] "" ECM
+   SG_ Switch_Data_Integrity : 1|2@0+ (1,0) [0|1] "" ECM
+   SG_ Cruise_Control_Switch_Status_Protection : 15|8@0+ (1,0) [0|255] "" ECM
+   SG_ Cruise_Control_Cancel_Request : 18|1@0+ (1,0) [0|1] "" ECM
+   SG_ Cruise_Control_Switch_Alive_Rolling_Count : 17|2@0+ (1,0) [0|3] "" ECM
+
+BO_ 2147483849 General_Engine_Status_1: 8 ECM
+   SG_ Engine_Run_Active : 7|1@0+ (1,0) [0|1] "" ECM
+   SG_ Crank_Active : 6|1@0+ (1,0) [0|1] "" ECM
+   SG_ Crank_Aborted : 5|1@0+ (1,0) [0|1] "" ECM
+   SG_ Run_Aborted : 4|1@0+ (1,0) [0|1] "" ECM
+   SG_ PTO_Run_Aborted : 3|1@0+ (1,0) [0|1] "" ECM
+   SG_ Idle_Active : 2|1@0+ (1,0) [0|1] "" ECM
+   SG_ Engine_Speed_Status : 1|2@0+ (1,0) [0|1] "" ECM
+   SG_ Engine_Speed : 15|16@0+ (0.25,0) [0|16383.8] "RPM" ECM
+   SG_ Cruise_Control_Active : 30|1@0+ (1,0) [0|1] "" ECM
+   SG_ Cruise_Control_Enabled : 29|1@0+ (1,0) [0|1] "" ECM
+   SG_ Driver_Throttle_Override : 28|1@0+ (1,0) [0|1] "" ECM
+   SG_ Accelerator_Position : 39|8@0+ (0.392157,0) [0|100] "%" ECM
+   SG_ Engine_Intake_Boost : 63|8@0- (1,0) [-128|128] "kPa" ECM
+
+BO_ 2147483897 Transmission_General_Status_1: 8 ECM
+
+BO_ 2147484099 Engine_Torque_Status_2: 8 ECM
+
+BO_ 2147484065 Engine_General_Status: 8 ECM
+   SG_ DPF_Idle_Regen_Request : 20|1@0+ (1,0) [0|1] "" ECM
+   SG_ DPF_Active_Regen_Request : 19|1@0+ (1,0) [0|1] "" ECM
+
+BO_ 2147484145 Platform_General_Status: 8 ECM
+
+BO_ 2147484355 Engine_Torque_Status_3: 8 ECM
+
+BO_ 2147484649 Vehicle_Speed_and_Distance: 8 ECM
+
+BO_ 2147484913 Powertrain_Configuration_Data: 8 ECM
+
+BO_ 2147484915 Powertrain_Configuration_Data_2: 8 ECM
+
+BO_ 2147485554 DTC_Info_Ext: 8 ECM
+
+BO_ 2147485567 DTC_Info_Ext: 8 TCM
+
+BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
+BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
+BA_DEF_ BO_ "matchingcriteria" INT 0 0;
+BA_DEF_ BO_ "filterlabeling" INT 0 0;
+BA_DEF_DEF_ "GenMsgBackgroundColor" "#ffffff";
+BA_DEF_DEF_ "GenMsgForegroundColor" "#000000";
+BA_DEF_DEF_ "matchingcriteria" 0;
+BA_DEF_DEF_ "filterlabeling" 1;
+BA_ "GenMsgForegroundColor" BO_ 2147484881 "#aa00ff";
+BA_ "GenMsgBackgroundColor" BO_ 2147484881 "#ffffff";
+BA_ "GenMsgForegroundColor" BO_ 2147484873 "#ff0000";
+BA_ "GenMsgForegroundColor" BO_ 2147484865 "#55aa00";
+BA_ "GenMsgForegroundColor" BO_ 2147484897 "#000000";
+BA_ "GenMsgForegroundColor" BO_ 2147484665 "#00aaff";
+BA_ "GenMsgForegroundColor" BO_ 2147484625 "#55007f";
+BA_ "GenMsgForegroundColor" BO_ 2147484149 "#00aa00";
+VAL_ 2147484881 Oil_Temp_Valid 0 "Valid" 1 "Invalid";
+VAL_ 2147484881 Oil_Pressure_Valid 0 "Valid" 1 "Invalid";
+VAL_ 2147484881 Oil_Pressure_Low 0 "False" 1 "True";
+VAL_ 2147484881 Oil_Change_Indication 0 "False" 1 "True";
+VAL_ 2147484873 Transmission_Oil_Temp_Valid 0 "Valid" 1 "Invalid";
+VAL_ 2147484873 Transmission_Oil_Temp_Present 0 "False" 1 "True";
+VAL_ 2147484873 Transmission_Oil_Temp 0 "" 0 "";
+VAL_ 2147484873 Transmission_Oil_Thermal_Mgmt 0 "Normal" 1 "Counter-Measures_Active" 2 "Driver_Intervention_Requested";
+VAL_ 2147484865 Baro_Pressure_Valid 0 "Valid" 1 "Invalid";
+VAL_ 2147484865 Coolant_Temp_Valid 0 "Valid" 1 "Invalid";
+VAL_ 2147484865 IAT_Valid 0 "Valid" 1 "Invalid";
+VAL_ 2147484865 Barometric_Pressure_Absolute 0 "" 0 "";
+VAL_ 2147484865 Engine_Coolant_Temperature 0 "" 0 "";
+VAL_ 2147484865 IAT 0 "" 0 "";
+VAL_ 2147484665 Fuel_Injected_Rolling_Count_Reset 0 "False" 1 "True";
+VAL_ 2147484665 Generator_Field_Duty_Cycle_Valid 0 "Valid" 1 "Invalid";
+VAL_ 2147484665 Generator_Failed 0 "False" 1 "True";
+VAL_ 2147484665 Engine_Speed_Limitation 0 "False" 1 "True";
+VAL_ 2147484665 Vehicle_Speed_Limitation 0 "False" 1 "True";
+VAL_ 2147484665 Powertrain_Top_Speed_Limit_Reduced 0 "False" 1 "True";
+VAL_ 2147484665 AC_High_Side_Pressure_Valid 0 "Valid" 1 "Invalid";
+VAL_ 2147484665 Generator_Duty_Cycle_Powertrain_Override_Active 0 "False" 1 "True";
+VAL_ 2147484665 Fuel_Injected_Rolling_Count 0 "" 0 "";
+VAL_ 2147484665 Generator_Field_Duty_Cycle 0 "" 0 "";
+VAL_ 2147484665 Engine_Cooling_Fan_Speed 0 "" 0 "";
+VAL_ 2147484665 Engine_Oil_Life_Remaining 0 "" 0 "";
+VAL_ 2147484665 AC_High_Side_Pressure 0 "" 0 "";
+VAL_ 2147484665 Vehicle_Top_Speed_Limit 0 "" 0 "";
+VAL_ 2147484625 Throttle_Position_Valid 0 "Valid" 1 "Invalid";
+VAL_ 2147484625 Throttle_Progression_Status 0 "Map_A" 1 "Map_B" 2 "Map_C" 3 "ECM_Selected";
+VAL_ 2147484625 Engine_Emissions_Malfunction 0 "False" 1 "True";
+VAL_ 2147484625 Engine_Non_Emissions_Malfunction 0 "False" 1 "True";
+VAL_ 2147484625 Engine_Boost_Pressure_Indication_Valid 0 "Valid" 1 "Invalid";
+VAL_ 2147484625 Engine_Coast_Fuel_Cut_Off 0 "False" 1 "True";
+VAL_ 2147484625 Engine_Oil_Starvation 0 "False" 1 "True";
+VAL_ 2147484625 Cruise_Control_Active 0 "False" 1 "True";
+VAL_ 2147484625 AC_Compressor_Command 0 "Off" 1 "On";
+VAL_ 2147484149 TCC_Cmd_Mode 0 "Unlocked" 1 "Transitioning" 2 "Controlled_Slip" 3 "Locked" 0 "No Description";
+VAL_ 2147484149 Trans_Est_Gear 0 "Not_Supported" 1 "1st" 2 "2nd" 3 "3rd" 4 "4th" 5 "5th" 6 "6th" 7 "7th" 8 "8th" 12 "CVT_Forward" 13 "Neutral" 14 "Reverse" 15 "Park";
+VAL_ 2147484149 Trans_Est_Gear_Valid 0 "Valid" 1 "Invalid";
+VAL_ 2147484149 Auto_Trans_Shift_Status 0 "No_Shift" 1 "Upshift" 2 "Downshift";
+VAL_ 2147484149 Trans_Commanded_Gear 0 "Not_Supported" 1 "1st" 2 "2nd" 3 "3rd" 4 "4th" 5 "5th" 6 "6th" 7 "7th" 8 "8th" 12 "CVT_Forward" 13 "Neutral" 14 "Reverse" 15 "Park";
+VAL_ 2147484149 Trans_Shift_Level_Pos 0 "Between_Ranges" 1 "Park" 2 "Reverse" 3 "Neutral" 4 "A" 5 "B" 6 "C" 7 "D" 8 "E" 9 "F" 15 "Unknown";
+VAL_ 2147484129 Cancel_Switch_Active 0 "False" 1 "True";
+VAL_ 2147484129 On_Switch_Active 0 "False" 1 "True";
+VAL_ 2147484129 Resume_Switch_Active 0 "False" 1 "True";
+VAL_ 2147484129 Set_Switch_Active 0 "False" 1 "True";
+VAL_ 2147484129 Speed_Increase_Switch_Active 0 "False" 1 "True";
+VAL_ 2147484129 Speed_Decrease_Switch_Active 0 "False" 1 "True";
+VAL_ 2147484129 Switch_Data_Integrity 0 "Valid" 1 "Invalid" 2 "Failure_Detected" 3 "Illegal_Range";
+VAL_ 2147484129 Cruise_Control_Switch_Status_Protection 0 "" 0 "" 0 "" 0 "";
+VAL_ 2147484129 Cruise_Control_Cancel_Request 0 "False" 1 "True";
+VAL_ 2147484129 Cruise_Control_Switch_Alive_Rolling_Count 0 "" 0 "" 0 "" 0 "";
+VAL_ 2147483849 Engine_Run_Active 0 "False" 1 "True";
+VAL_ 2147483849 Crank_Active 0 "False" 1 "True";
+VAL_ 2147483849 Crank_Aborted 0 "False" 1 "True";
+VAL_ 2147483849 Run_Aborted 0 "False" 1 "True";
+VAL_ 2147483849 PTO_Run_Aborted 0 "False" 1 "True";
+VAL_ 2147483849 Idle_Active 0 "False" 1 "True";
+VAL_ 2147483849 Engine_Speed_Status 0 "Normal" 1 "Degraded" 3 "Invalid";
+VAL_ 2147483849 Cruise_Control_Active 0 "False" 1 "True";
+VAL_ 2147483849 Cruise_Control_Enabled 0 "False" 1 "True";
+VAL_ 2147483849 Driver_Throttle_Override 0 "False" 1 "True";
+VAL_ 2147484065 DPF_Idle_Regen_Request 0 "False" 1 "True";
+VAL_ 2147484065 DPF_Active_Regen_Request 0 "False" 1 "True";
